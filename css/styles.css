@@ -1,34 +1,35 @@
 .home-tag {
   background-color: #C6EBC5;
   height: 4em;
+  line-height: 4em;
   width: 100%;
-  margin: auto;
-  border: 0;
-  padding: 0;
-  display: inline;
+  border-radius: 0.5em;
   position: fixed;
+  top:0;
+  left: 0;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1.2em;
 }
 
 .home-icon{
-  position: relative;
-  height: 2em;
+  position: absolute;
+  height: 4em;
+  margin: auto auto auto 0.5em;
 
 }
 
 .home-button {
-  /* position: absolute;
-  left: auto;
-  height: 1em;
-  top: 0em;
-  bottom: 0em;
-  width: auto; */
-  margin: auto;
-  width: 50px;
-  padding: 10px;
+  position: absolute;
+  vertical-align: middle;
+  left: 6em;
+
 }
 
 .avatar {
-  margin: auto 1em auto;
+  position: absolute;
   height: 3em;
   border-radius: 50%;
+  top: 0.5em;
+  right: 1em;
+
 }

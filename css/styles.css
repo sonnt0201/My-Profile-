@@ -1,0 +1,34 @@
+.home-tag {
+  background-color: #C6EBC5;
+  height: 4em;
+  width: 100%;
+  margin: auto;
+  border: 0;
+  padding: 0;
+  display: inline;
+  position: fixed;
+}
+
+.home-icon{
+  position: relative;
+  height: 2em;
+
+}
+
+.home-button {
+  /* position: absolute;
+  left: auto;
+  height: 1em;
+  top: 0em;
+  bottom: 0em;
+  width: auto; */
+  margin: auto;
+  width: 50px;
+  padding: 10px;
+}
+
+.avatar {
+  margin: auto 1em auto;
+  height: 3em;
+  border-radius: 50%;
+}

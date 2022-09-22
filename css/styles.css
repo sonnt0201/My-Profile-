@@ -1,3 +1,8 @@
+a {
+  color: black;
+  text-decoration: none;
+}
+
 .home-tag {
   background-color: #C6EBC5;
   height: 4em;
@@ -25,6 +30,10 @@
 
 }
 
+.contact-button {
+  position: absolute;
+  right: 6em;
+}
 .avatar {
   position: absolute;
   height: 3em;

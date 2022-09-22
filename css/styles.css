@@ -47,7 +47,7 @@ a {
 
 .name-introduce {
   background-image: linear-gradient(to bottom, #EEF1FFAA, #D2DAFF);
-  height: 100em;
+  height: 100%;
   width: 100%;
   position: absolute;
   margin: 0;
@@ -61,6 +61,7 @@ a {
   margin: 0;
   position: absolute;
   top: 1em;
+  width: 100%;
   color: red;
   font-family: 'Sacramento', cursive;
   font-size: 6em;
@@ -83,5 +84,20 @@ a {
   text-align: center;
   top: 15em;
   font-size: 2em;
+}
 
+.about-me {
+  margin: 0;
+  background-image: linear-gradient(to bottom, #D2DAFF, #FAD4D4AA);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 48em;
+  text-align: center;
+}
+
+.about-me>h1 {
+  background: none;
+  font-family: 'Sacramento', cursive;
+  font-size: 6em;
 }

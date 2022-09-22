@@ -47,19 +47,41 @@ a {
 
 .name-introduce {
   background-image: linear-gradient(to bottom, #EEF1FFAA, #D2DAFF);
-  height: 50em;
+  height: 100em;
   width: 100%;
   position: absolute;
   margin: 0;
   top: 4.9em;
-  font-family: 'Sacramento', cursive;
+
 
 }
 
 .name-introduce>h1 {
+  background: none;
+  margin: 0;
   position: absolute;
   top: 1em;
   color: red;
-  font-size: 4em;
+  font-family: 'Sacramento', cursive;
+  font-size: 6em;
   text-align: center;
+}
+
+.name-introduce .jumping-bird {
+  position: absolute;
+  margin: 0;
+  top: 24em;
+  left: 1em;
+}
+
+.name-introduce>p {
+  background: none;
+  margin: 0;
+  position: absolute;
+  font-family: 'Merriweather Sans', sans-serif;
+  width: 100%;
+  text-align: center;
+  top: 15em;
+  font-size: 2em;
+
 }

@@ -2,7 +2,7 @@ body {
   margin: 0;
   height: 100vh;
   text-align: center;
-  overflow: hidden;
+  /* overflow: hidden; */
   /* background-image: linear-gradient(to bottom, #b9f3fcaa, #8EA7E9aa, #E5E0FFaa, #FFF2F2aa); */
 }
 
@@ -39,6 +39,8 @@ i {
 
 .grid-item {
   margin: auto;
+  width: calc(20vw + 1rem);
+  /* background-image: radial-gradient(#AEE2FF, #B9F3FC, rgba(255, 255, 255, 0) 60%); */
 }
 
 .grid-container {
@@ -63,6 +65,10 @@ i {
     font-size: calc(10vw + 2rem);
     margin: 0px;
     padding: 0px;
+  }
+  .grid-item {
+    margin: auto;
+    width: calc(10vw + 2rem);
   }
 }
 

@@ -36,12 +36,6 @@ footer {
   bottom: calc(1vw + 0.5rem);
 }
 
-i {
-  font-size: calc(20vw + 2rem);
-  margin: 0px;
-  padding: 0px;
-}
-
 .grid-item {
   margin: auto;
   width: calc(20vw + 1rem);
@@ -66,11 +60,6 @@ i {
     gap: calc(10vw + 20px) 5vw;
   }
 
-  i {
-    font-size: calc(10vw + 2rem);
-    margin: 0px;
-    padding: 0px;
-  }
 
   .grid-item {
     margin: auto;
@@ -82,10 +71,6 @@ i {
 @-webkit-keyframes glow {
   from {
     text-shadow:
-      0 0 10px rgba(255, 255, 255, 0),
-      0 0 20px rgba(255, 255, 255, 0),
-      0 0 30px #e6007300,
-      0 0 40px #e6007300,
       0 0 50px #FFD495,
       0 0 60px #FAAB78,
       0 0 70px #DC3535;
@@ -93,10 +78,6 @@ i {
 
   to {
     text-shadow:
-      0 0 20px rgba(255, 255, 255, 0),
-      0 0 30px #ff4da600,
-      0 0 40px #ff4da600,
-      0 0 50px #ff4da600,
       0 0 60px #379237aa,
       0 0 70px #82CD47aa,
       0 0 80px #54B435aa;

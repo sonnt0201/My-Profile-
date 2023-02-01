@@ -8,15 +8,15 @@ body {
 
 h1 {
   margin-top: calc(1vw + 2.5rem);
-  margin-bottom: calc(1vw + 1.5rem);
-  font-size: calc(3vw + 2rem);
+  margin-bottom: calc(2vw + 4rem);
+  font-size: calc(3vw + 5rem);
   font-family: RobotoVi;
 
   /* effect */
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(to bottom, #ff0000ee, #E0144Cee, #913175bb, #775ADAee, #686EE2ee);
+  background-image: linear-gradient(to bottom, #ff0000, #E0144C, #913175, #775ADA, #686EE2);
 
   -webkit-animation: glow 3s ease-in-out infinite alternate;
   -moz-animation: glow 3s ease-in-out infinite alternate;
@@ -24,10 +24,29 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 4rem;
   margin: 0;
   font-family: RobotoVi;
 }
+
+.mailtext {
+  display: none;
+}
+
+.grid-item {
+  margin: auto;
+  width: calc(20vw + 8rem);
+  /* background-image: radial-gradient(#AEE2FF, #B9F3FC, rgba(255, 255, 255, 0) 60%); */
+}
+
+.grid-container {
+  display: grid;
+  margin: calc(2.5vw + 8rem) 0 10vw;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  gap: calc(10vw + 20px) 5vw;
+}
+
 
 footer {
   text-align: center;
@@ -36,51 +55,70 @@ footer {
   bottom: calc(1vw + 0.5rem);
 }
 
-.grid-item {
-  margin: auto;
-  width: calc(20vw + 1rem);
-  /* background-image: radial-gradient(#AEE2FF, #B9F3FC, rgba(255, 255, 255, 0) 60%); */
+footer>* {
+  font-size: 2.5rem;
+  font-family: RobotoVi;
 }
-
-.grid-container {
-  display: grid;
-  margin: calc(2.5vw + 3rem) 0 10vw;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-  gap: calc(10vw + 20px) 5vw;
-}
-
 /* RESPONSIVE FOR PC SCREEN */
-@media screen and (min-width: 720px) {
-  .grid-container {
-    display: grid;
-    margin: calc(5vw + 2rem) 0 10vw;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto;
-    gap: calc(10vw + 20px) 5vw;
+@media only screen and (min-device-width: 720px) {
+  /* pc small width */
+  h1 {
+    font-size: calc(3vw + 2rem);
+    margin-top: calc(1vw + 2.5rem);
+    margin-bottom: calc(1vw + 1.5rem);
   }
 
+  h2 {
+    font-size: 2rem;
+  }
 
+  .mailtext {
+    display:inline;
+    top: 1rem;
+  }
+
+  footer>* {
+    font-size: 1rem;
+  }
   .grid-item {
     margin: auto;
-    width: calc(10vw + 2rem);
+    width: calc(20vw + 1rem);
+    /* background-image: radial-gradient(#AEE2FF, #B9F3FC, rgba(255, 255, 255, 0) 60%); */
   }
+/* pc large width */
+  @media only screen and (min-width: 720px) {
+    .grid-container {
+      display: grid;
+      margin: calc(5vw + 2rem) 0 10vw;
+      grid-template-columns: auto auto auto auto;
+      grid-template-rows: auto;
+      gap: calc(10vw + 20px) 5vw;
+    }
+
+    .grid-item {
+      margin: auto;
+      width: calc(10vw + 2rem);
+    }
+  }
+
 }
 
 /* KEYFRAME */
 @-webkit-keyframes glow {
   from {
     text-shadow:
-      0 0 50px #FFD495,
-      0 0 60px #FAAB78,
-      0 0 70px #DC3535;
+
+      0 0 50px #FFD495a0,
+      0 0 60px #FAAB78a0,
+      0 0 70px #DC3535a0;
   }
 
   to {
     text-shadow:
-      0 0 60px #379237aa,
-      0 0 70px #82CD47aa,
-      0 0 80px #54B435aa;
+
+      0 0 60px #379237a0,
+      0 0 70px #82CD47a0,
+      0 0 80px #54B435a0;
   }
 }
 

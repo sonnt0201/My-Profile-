@@ -2,7 +2,7 @@ body {
   margin: 0;
   height: 100vh;
   text-align: center;
-  /* overflow: hidden; */
+  overflow: hidden;
   background-image: linear-gradient(to bottom, #D9F8C4a0, #F9F9C5a0, #FAD9A1a0, #FFB562a0);
 }
 

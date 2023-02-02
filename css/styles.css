@@ -34,11 +34,8 @@ h1 {
   font-family: RobotoVi;
 
   /* effect */
-  background-clip: text;
-  -webkit-background-clip: text;
-  background-image: linear-gradient(to bottom, #ff0000, #E0144C,  #775ADA, #686EE2);
+  color:#645CBB;
 
-  -webkit-text-fill-color: transparent;
   
   -webkit-animation: glow 1.8s ease-in-out infinite alternate;
   -moz-animation: glow 1.8s ease-in-out infinite alternate;
@@ -163,6 +160,7 @@ h2 {
 @-webkit-keyframes start {
   0% {
     border-radius: 0%;
+    padding: 3rem;
     border-width:0.5rem;
     border-color: #686EE2aa;
     width: 1%;
@@ -186,6 +184,7 @@ h2 {
 
   100% {
     border-style:none;
+    padding:0px;
     width: 100%;
     margin: 0;
     rotate: 0deg;

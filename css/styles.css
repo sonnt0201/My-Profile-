@@ -40,20 +40,20 @@ h2 {
  
 }
 #item1 {
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-}
-#item2 {
   -webkit-animation-delay: 8s;
           animation-delay: 8s;
 }
-#item3 {
+#item2 {
   -webkit-animation-delay: 16s;
           animation-delay: 16s;
 }
-#item4 {
+#item3 {
   -webkit-animation-delay: 24s;
           animation-delay: 24s;
+}
+#item4 {
+  -webkit-animation-delay: 32s;
+          animation-delay: 32s;
 }
 @-webkit-keyframes zoom{
   3.125% {

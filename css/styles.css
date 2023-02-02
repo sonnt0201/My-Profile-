@@ -6,18 +6,6 @@ body {
   background-image: linear-gradient(to bottom, #D9F8C4a0, #F9F9C5a0, #FAD9A1a0, #FFB562a0);
 }
 
-img {
-  border: 0;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  border: 0;
-  padding: 0;
-  margin: 0;
-}
-
 h1 {
   margin-top: calc(1vw + 2.5rem);
   margin-bottom: calc(2vw + 4rem);
@@ -37,6 +25,7 @@ h1 {
 
 h2 {
   font-size: 4rem;
+  color: #434242;
   margin: 0;
   font-family: RobotoVi;
 }
@@ -53,6 +42,7 @@ h2 {
 }
 
 #item1 {
+  
   -webkit-animation-delay: 8s;
   animation-delay: 8s;
 }
@@ -97,33 +87,59 @@ h2 {
 
 .icon1 {
   border-radius: 50%;
-  box-shadow: 
-    inset 0 0 40px #0baaca75,
-    inset 0 0 70px #0ba9ca, 0 0 80px #0ba9ca;
-  ;
+  box-shadow:
+    0 0 40rem #E5E0FF,
+    0 0 20rem #8EA7E9,
+    0 0 100px #645CBBaa,
+    inset 0 0 2rem #A084DCaa,
+    inset 0 0 4rem #BFACE2,
+    inset 0 0 8rem #BFACE2aa;
   animation-delay: 0.1s;
   -webkit-animation-delay: 0.1s;
 }
 
 .icon2 {
   border-radius: 30%;
-  border-color: red;
+  box-shadow:
+    0 0 40rem #FF597Bcc,
+    0 0 20rem #FF8E9Ecc,
+    0 0 100px #F9B5D0,
+    inset 0 0 2rem #FF8E9E,
+    inset 0 0 4rem #FF597Baa,
+    inset 0 0 8rem #F9B5D0aa;
   animation-delay: 0.2s;
   -webkit-animation-delay: 0.2s;
 }
 
 .icon3 {
+  border-radius: 50%;
+  box-shadow:
+    0 0 40rem #EB4747,
+    0 0 20rem #FF8B8Baa,
+    0 0 100px #FFDEDE,
+    inset 0 0 2rem #F9F2ED,
+    inset 0 0 4rem #EEF2FF,
+    inset 0 0 8rem #CDDEFF;
   animation-delay: 0.3s;
   -webkit-animation-delay: 0.3s;
 }
 
 .icon4 {
+  border-radius: 50%;
+  box-shadow:
+    0 0 40rem #404258aa,
+    0 0 20rem #474E68aa,
+    0 0 100px #50577Aaa,
+    inset 0 0 2rem #6B728E,
+    inset 0 0 4rem #434242,
+    inset 0 0 8rem #BFACE2aa;
   animation-delay: 0.4s;
   -webkit-animation-delay: 0.4s;
 }
 
 @-webkit-keyframes start {
   0% {
+    border-radius: 0%;
     width: 1%;
     /* phóng to từ dưới lên */
     margin-top: 90%;

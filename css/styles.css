@@ -7,7 +7,7 @@ body {
   height: 100vh;
   text-align: center;
   overflow: hidden;
-  background-image: linear-gradient(to bottom, #D9F8C4a0, #F9F9C5a0, #FAD9A1a0, #FFB562a0);
+  background-image: linear-gradient(to bottom, #FFF2F266, #E5E0FF66, #8EA7E966, #7286D366);
  
 }
 /* @-webkit-keyframes body-change {
@@ -36,9 +36,10 @@ h1 {
   /* effect */
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(to bottom, #ff0000, #E0144C, #913175, #775ADA, #686EE2);
+  background-image: linear-gradient(to bottom, #ff0000, #E0144C,  #775ADA, #686EE2);
 
+  -webkit-text-fill-color: transparent;
+  
   -webkit-animation: glow 1.8s ease-in-out infinite alternate;
   -moz-animation: glow 1.8s ease-in-out infinite alternate;
   animation: glow 1.8s ease-in-out infinite alternate, 
@@ -97,6 +98,7 @@ h2 {
   -webkit-animation-delay: 32s;
   animation-delay: 32s;
 }
+
 /* ZOOM FOR ITEMS  */
 @-webkit-keyframes zoom {
   3.125% {
@@ -131,7 +133,7 @@ h2 {
 }
 
 .icon2 {
-  border-radius: 30%;
+  border-radius: 20%;
   box-shadow:
    0 0 8rem #FF8E9Eaa;
     /* inset 0 0 8rem #F9B5D0aa; */
@@ -140,10 +142,10 @@ h2 {
 }
 
 .icon3 {
-  border-radius: 50%;
+  border-radius: 10%;
   box-shadow:
 
-    /* inset  */
+     inset 
     0 0 8rem #CDDEFF;
   animation-delay: 0.3s;
   -webkit-animation-delay: 0.3s;
@@ -161,6 +163,8 @@ h2 {
 @-webkit-keyframes start {
   0% {
     border-radius: 0%;
+    border-width:0.5rem;
+    border-color: #686EE2aa;
     width: 1%;
     /* phóng to từ dưới lên */
     margin-top: 90%;
@@ -181,6 +185,7 @@ h2 {
   }
 
   100% {
+    border-style:none;
     width: 100%;
     margin: 0;
     rotate: 0deg;
@@ -268,17 +273,17 @@ footer>* {
   from {
     text-shadow:
 
-      0 0 50px #FFD495a0,
-      0 0 60px #FAAB78a0,
-      0 0 70px #DC3535a0;
+      0 0 20px #FFD49566,
+      0 0 30px #FAAB7866,
+      0 0 40px #DC353566;
   }
 
   to {
     text-shadow:
 
-      0 0 60px #379237a0,
-      0 0 70px #82CD47a0,
-      0 0 80px #54B435a0;
+      0 0 20px #37923766,
+      0 0 30px #82CD4766,
+      0 0 40px #54B43566;
   }
 }
 

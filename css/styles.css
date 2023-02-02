@@ -8,8 +8,25 @@ body {
   text-align: center;
   overflow: hidden;
   background-image: linear-gradient(to bottom, #D9F8C4a0, #F9F9C5a0, #FAD9A1a0, #FFB562a0);
+  animation: body-change 32s ease-in-out infinite alternate;
 }
+@-webkit-keyframes body-change {
+  20% {
+    background-image: linear-gradient(to bottom, #FFF2F2a0, #E5E0FFa0, #8EA7E9a0, #7286D3a0);
+  }
+  40% {
+    background-image: linear-gradient(to bottom, #EEEEEEa0, #F9B5D0a0, #FF8E9Ea0, #FF597Ba0);
 
+  }
+  60% {
+    background-image: linear-gradient(to bottom, #FFDCAEa0, #CED89Ea0, #ADCF9Fa0, #76BA99a0);
+
+  }
+  80% {
+    background-image: linear-gradient(to bottom, #6B728E88, #50577A88, #474E6888, #40425888);
+
+  }
+}
 h1 {
   margin-top: calc(1vw + 2.5rem);
   margin-bottom: calc(2vw + 4rem);
@@ -44,7 +61,7 @@ h1 {
 
 h2 {
   font-size: 4rem;
-  color: #434242;
+  color: #50577A;
   margin: 0;
   font-family: RobotoVi;
 }
@@ -80,7 +97,7 @@ h2 {
   -webkit-animation-delay: 32s;
   animation-delay: 32s;
 }
-
+/* ZOOM FOR ITEMS  */
 @-webkit-keyframes zoom {
   3.125% {
     width: calc(20vw + 12rem);
@@ -107,11 +124,11 @@ h2 {
 .icon1 {
   border-radius: 50%;
   box-shadow:
-    0 0 40rem #E5E0FF,
-    0 0 20rem #8EA7E9,
+    0 0 40rem #E5E0FFaa,
+    0 0 20rem #8EA7E9aa,
     0 0 100px #645CBBaa,
     inset 0 0 2rem #A084DCaa,
-    inset 0 0 4rem #BFACE2,
+    inset 0 0 4rem #bface2,
     inset 0 0 8rem #BFACE2aa;
   animation-delay: 0.1s;
   -webkit-animation-delay: 0.1s;
@@ -193,6 +210,12 @@ h2 {
   gap: calc(10vw + 20px) 5vw;
 }
 
+.decor {
+  margin: 0 auto auto;
+  width: 10vh;
+  height: 4vh;
+  
+}
 
 footer {
   text-align: center;

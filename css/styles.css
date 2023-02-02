@@ -8,25 +8,25 @@ body {
   text-align: center;
   overflow: hidden;
   background-image: linear-gradient(to bottom, #D9F8C4a0, #F9F9C5a0, #FAD9A1a0, #FFB562a0);
-  animation: body-change 32s ease-in-out infinite alternate;
+ 
 }
-@-webkit-keyframes body-change {
+/* @-webkit-keyframes body-change {
   20% {
-    background-image: linear-gradient(to bottom, #FFF2F2a0, #E5E0FFa0, #8EA7E9a0, #7286D3a0);
+    background-image: linear-gradient(to bottom, #FFF2F266, #E5E0FF66, #8EA7E966, #7286D366);
   }
   40% {
-    background-image: linear-gradient(to bottom, #EEEEEEa0, #F9B5D0a0, #FF8E9Ea0, #FF597Ba0);
+    background-image: linear-gradient(to bottom, #EEEEEE66, #F9B5D066, #FF8E9E66, #FF597B66);
 
   }
   60% {
-    background-image: linear-gradient(to bottom, #FFDCAEa0, #CED89Ea0, #ADCF9Fa0, #76BA99a0);
+    background-image: linear-gradient(to bottom, #FFDCAE66, #CED89E66, #ADCF9F66, #76BA9966);
 
   }
   80% {
     background-image: linear-gradient(to bottom, #6B728E88, #50577A88, #474E6888, #40425888);
 
   }
-}
+} */
 h1 {
   margin-top: calc(1vw + 2.5rem);
   margin-bottom: calc(2vw + 4rem);
@@ -255,6 +255,7 @@ footer>* {
   .grid-item {
     margin: auto;
     width: calc(20vw + 1rem);
+    animation: none;
     /* background-image: radial-gradient(#AEE2FF, #B9F3FC, rgba(255, 255, 255, 0) 60%); */
   }
 

@@ -18,9 +18,9 @@ h1 {
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(to bottom, #ff0000, #E0144C, #913175, #775ADA, #686EE2);
 
-  -webkit-animation: glow 3s ease-in-out infinite alternate;
-  -moz-animation: glow 3s ease-in-out infinite alternate;
-  animation: glow 3s ease-in-out infinite alternate;
+  -webkit-animation: glow 1.8s ease-in-out infinite alternate;
+  -moz-animation: glow 1.8s ease-in-out infinite alternate;
+  animation: glow 1.8s ease-in-out infinite alternate;
 }
 
 h2 {
@@ -36,9 +36,86 @@ h2 {
 .grid-item {
   margin: auto;
   width: calc(20vw + 8rem);
-  /* background-image: radial-gradient(#AEE2FF, #B9F3FC, rgba(255, 255, 255, 0) 60%); */
+  animation: zoom 32s ease-in-out infinite;
+ 
+}
+#item1 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+#item2 {
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+#item3 {
+  -webkit-animation-delay: 16s;
+          animation-delay: 16s;
+}
+#item4 {
+  -webkit-animation-delay: 24s;
+          animation-delay: 24s;
+}
+@-webkit-keyframes zoom{
+  3.125% {
+    width: calc(20vw + 12rem);
+  }
+  6.25% {
+    width: calc(20vw + 8rem);
+  }
+  100% {
+    width: calc(20vw + 8rem);
+  }
 }
 
+.icon {
+  width: 0% ;
+  /* animation */ 
+  transition: ease;
+  animation: start 0.8s ease-out  forwards;
+  -webkit-animation: start 0.8s ease-out forwards;
+  -moz-animation: start 0.8s ease-out forwards;
+}
+.icon1 {
+
+  animation-delay: 0.1s;
+  -webkit-animation-delay: 0.1s;
+}
+.icon2 {
+  animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+}
+.icon3 {
+  animation-delay: 0.3s;
+  -webkit-animation-delay: 0.3s;
+}
+.icon4 {
+  animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+}
+@-webkit-keyframes start{
+  0% {
+    width: 1%;
+    /* phóng to từ dưới lên */
+    margin-top: 90%;
+    margin-right: 90%;
+    rotate: -60deg;
+  } 
+  33% {
+    width: 120%;
+    margin: 0;
+    rotate: -10deg;
+  }
+  66% {
+    width: 120%;
+    margin: 0;
+    rotate: 10deg;
+  }
+  100% {
+    width: 100%;
+    margin: 0;
+    rotate: 0deg;
+  }
+}
 .grid-container {
   display: grid;
   margin: calc(2.5vw + 8rem) 0 10vw;
@@ -119,7 +196,7 @@ footer>* {
       0 0 60px #379237a0,
       0 0 70px #82CD47a0,
       0 0 80px #54B435a0;
-  }
+  } 
 }
 
 /* FONT  */

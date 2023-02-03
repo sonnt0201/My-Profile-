@@ -10,23 +10,7 @@ body {
   background-image: linear-gradient(to bottom, #FFF2F266, #E5E0FF66, #8EA7E966, #7286D366);
  
 }
-/* @-webkit-keyframes body-change {
-  20% {
-    background-image: linear-gradient(to bottom, #FFF2F266, #E5E0FF66, #8EA7E966, #7286D366);
-  }
-  40% {
-    background-image: linear-gradient(to bottom, #EEEEEE66, #F9B5D066, #FF8E9E66, #FF597B66);
 
-  }
-  60% {
-    background-image: linear-gradient(to bottom, #FFDCAE66, #CED89E66, #ADCF9F66, #76BA9966);
-
-  }
-  80% {
-    background-image: linear-gradient(to bottom, #6B728E88, #50577A88, #474E6888, #40425888);
-
-  }
-} */
 h1 {
   margin-top: calc(1vw + 2.5rem);
   margin-bottom: calc(2vw + 4rem);
@@ -160,7 +144,7 @@ h2 {
 @-webkit-keyframes start {
   0% {
     border-radius: 0%;
-    padding: 3rem;
+    padding: 10rem;
     border-width:0.5rem;
     border-color: #686EE2aa;
     width: 1%;

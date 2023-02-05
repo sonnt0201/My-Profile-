@@ -3,30 +3,14 @@
   @All by Nguyễn Thái Sơn 
 */
 body {
-  margin: 0;
+  /* border-radius: 30%; */
   height: 100vh;
   text-align: center;
   overflow: hidden;
   background-image: linear-gradient(to bottom, #FFF2F266, #E5E0FF66, #8EA7E966, #7286D366);
  
 }
-/* @-webkit-keyframes body-change {
-  20% {
-    background-image: linear-gradient(to bottom, #FFF2F266, #E5E0FF66, #8EA7E966, #7286D366);
-  }
-  40% {
-    background-image: linear-gradient(to bottom, #EEEEEE66, #F9B5D066, #FF8E9E66, #FF597B66);
 
-  }
-  60% {
-    background-image: linear-gradient(to bottom, #FFDCAE66, #CED89E66, #ADCF9F66, #76BA9966);
-
-  }
-  80% {
-    background-image: linear-gradient(to bottom, #6B728E88, #50577A88, #474E6888, #40425888);
-
-  }
-} */
 h1 {
   margin-top: calc(1vw + 2.5rem);
   margin-bottom: calc(2vw + 4rem);
@@ -36,11 +20,14 @@ h1 {
   /* effect */
   color:#645CBB;
 
-  
-  -webkit-animation: glow 1.8s ease-in-out infinite alternate;
-  -moz-animation: glow 1.8s ease-in-out infinite alternate;
-  animation: glow 1.8s ease-in-out infinite alternate, 
-            h1-start 0.8s ease forwards;
+  /* text-shadow: 0rem 0rem 2rem #ff0000; */
+  -webkit-animation: h1-start 0.8s ease forwards;
+  /* glow 1.8s ease-in-out infinite alternate; */
+  -moz-animation: h1-start 0.8s ease forwards;
+  /* glow 1.8s ease-in-out infinite alternate; */
+  animation: h1-start 0.8s ease forwards;
+  /* glow 1.8s ease-in-out infinite alternate,  */
+           
 }
 
 @-webkit-keyframes h1-start {
@@ -63,6 +50,7 @@ h2 {
   margin: 0;
   font-family: RobotoVi;
 }
+
 
 .mailtext {
   display: none;
@@ -142,8 +130,8 @@ h2 {
   border-radius: 10%;
   box-shadow:
 
-     inset 
-    0 0 8rem #CDDEFF;
+     inset 0 0 8rem #82CD4788,
+    0 0 8rem #82CD4788;
   animation-delay: 0.3s;
   -webkit-animation-delay: 0.3s;
 }
@@ -160,9 +148,8 @@ h2 {
 @-webkit-keyframes start {
   0% {
     border-radius: 0%;
-    padding: 3rem;
-    border-width:0.5rem;
-    border-color: #686EE2aa;
+    padding: 2rem;
+    /* border-color: #686EE2aa; */
     width: 1%;
     /* phóng to từ dưới lên */
     margin-top: 90%;

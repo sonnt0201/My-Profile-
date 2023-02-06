@@ -1,8 +1,9 @@
+/* - January 2023
+   @All by Nguyễn Thái Sơn */
 @font-face {
   font-family: RobotoVi;
   src: url(RobotoCondensed-Bold.ttf);
 }
-// $icons: icon1, icon2, icon3, icon4;
 @-webkit-keyframes icon-start {
   0% {
     padding: 2rem;
@@ -33,16 +34,61 @@
     /* box-shadow: 0 0 0 #fff; */
   }
 }
-@mixin icon-start($animation-delay) {
-  -webkit-animation: icon-start 1s ease-in-out  forwards;
-  animation: icon-start 1s ease-in-out  forwards;
-  animation-delay: #{$animation-delay}s;
- 
+@-webkit-keyframes item-zoom {
+  3.125% {
+    width: calc(20vw + 12rem);
+  }
+
+  6.25% {
+    width: calc(20vw + 8rem);
+  }
+
+  100% {
+    width: calc(20vw + 8rem);
+  }
+}
+$init-shadow-color: blue, red, green, rgb(32, 31, 31);
+$shadow-color: #8ea7e9, #ff8e9d, #81cd47, #746f7f;
+@mixin icon-start($index) {
+  -webkit-animation: icon-start 1s ease-in-out forwards,
+    glow-start-#{$index} 2s ease 2s forwards,
+    // icon-zoom 32s ease #{$index * 8}s infinite
+    ;
+  animation: icon-start 1s ease-in-out #{$index * 0.2}s forwards,
+    glow-start-#{$index} 2s ease 2s forwards,
+    // icon-zoom 32s ease #{$index * 8}s infinite
+    ;
+
+  @-webkit-keyframes glow-start-#{$index} {
+    30% {
+      box-shadow: 0 0 8rem nth($init-shadow-color, $index),
+        inset 0 0 8rem nth($shadow-color, $index);
+    }
+    100% {
+      @if ($index == 1 or $index == 4) {
+        border-radius: 50%;
+      } @else if ($index == 3) {
+        border-radius: 10%;
+      } @else {
+        border-radius: 20%;
+      }
+      border-width: 0rem;
+      padding: 0;
+      box-shadow: 0 0 8rem nth($shadow-color, $index),
+        inset 0 0 8rem nth($shadow-color, $index);
+      animation-delay: 0.2s;
+      -webkit-animation-delay: 0.2s;
+    }
+  }
+}
+@mixin item-zoom($index) {
+  animation: item-zoom 32s ease #{$index * 8}s infinite;
+  -webkit-animation: item-zoom 32s ease #{$index * 8}s infinite;
 }
 body {
   height: 100vh;
   text-align: center;
-  // overflow: hidden;
+  overflow: hidden;
   background-image: linear-gradient(
     to bottom,
     #fff2f266,
@@ -102,12 +148,17 @@ h2 {
     animation: zoom 32s ease-in-out infinite;
   }
   .icon {
-     width: 0%;
+    width: 0%;
   }
 }
 @for $index from 1 to 5 {
   .icon#{$index} {
-    @include icon-start(calc(0.2 * $index));
+    // $color: @debug list.nth($shadow-color, index-1)
+    @include icon-start($index);
+    // @include icon-zoom($index);
+  }
+  #item#{$index} {
+    @include item-zoom($index);
   }
 }
 footer {

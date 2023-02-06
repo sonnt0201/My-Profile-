@@ -1,14 +1,37 @@
-/* 
-  - January 2023
-  @All by Nguyễn Thái Sơn 
-*/
+@font-face {
+  font-family: RobotoVi;
+  src: url(RobotoCondensed-Bold.ttf);
+}
+@-webkit-keyframes icon-start {
+  0% {
+    padding: 2rem;
+    width: 1%;
+    margin-top: 90%;
+    margin-right: 90%;
+    rotate: -60deg;
+  }
+  33% {
+    width: 120%;
+    margin: 0;
+    rotate: -10deg;
+  }
+  66% {
+    width: 120%;
+    margin: 0;
+    rotate: 10deg;
+  }
+  100% {
+    padding: 0px;
+    width: 100%;
+    margin: 0;
+    rotate: 0deg;
+    /* box-shadow: 0 0 0 #fff; */
+  }
+}
 body {
-  /* border-radius: 30%; */
   height: 100vh;
   text-align: center;
-  overflow: hidden;
-  background-image: linear-gradient(to bottom, #FFF2F266, #E5E0FF66, #8EA7E966, #7286D366);
- 
+  background-image: linear-gradient(to bottom, rgba(255, 242, 242, 0.4), rgba(229, 224, 255, 0.4), rgba(142, 167, 233, 0.4), rgba(114, 134, 211, 0.4));
 }
 
 h1 {
@@ -16,167 +39,32 @@ h1 {
   margin-bottom: calc(2vw + 4rem);
   font-size: calc(3vw + 5rem);
   font-family: RobotoVi;
-
   /* effect */
-  color:#645CBB;
-
-  /* text-shadow: 0rem 0rem 2rem #ff0000; */
+  color: #645cbb;
   -webkit-animation: h1-start 0.8s ease forwards;
-  /* glow 1.8s ease-in-out infinite alternate; */
   -moz-animation: h1-start 0.8s ease forwards;
-  /* glow 1.8s ease-in-out infinite alternate; */
   animation: h1-start 0.8s ease forwards;
-  /* glow 1.8s ease-in-out infinite alternate,  */
-           
 }
-
 @-webkit-keyframes h1-start {
   from {
     font-size: 98%;
     padding-top: 2px;
-    /* margin-top: 98%; */
   }
-
   to {
-    padding-top:0;
-    /* margin-top: calc(1vw + 2.5rem); */
+    padding-top: 0;
     font-size: calc(3vw + 5rem);
   }
 }
 
 h2 {
   font-size: 4rem;
-  color: #50577A;
+  color: #50577a;
   margin: 0;
   font-family: RobotoVi;
 }
 
-
 .mailtext {
   display: none;
-}
-
-.grid-item {
-  margin: auto;
-  width: calc(20vw + 8rem);
-  animation: zoom 32s ease-in-out infinite;
-
-}
-
-#item1 {
-
-  -webkit-animation-delay: 8s;
-  animation-delay: 8s;
-}
-
-#item2 {
-  -webkit-animation-delay: 16s;
-  animation-delay: 16s;
-}
-
-#item3 {
-  -webkit-animation-delay: 24s;
-  animation-delay: 24s;
-}
-
-#item4 {
-  -webkit-animation-delay: 32s;
-  animation-delay: 32s;
-}
-
-/* ZOOM FOR ITEMS  */
-@-webkit-keyframes zoom {
-  3.125% {
-    width: calc(20vw + 12rem);
-  }
-
-  6.25% {
-    width: calc(20vw + 8rem);
-  }
-
-  100% {
-    width: calc(20vw + 8rem);
-  }
-}
-
-.icon {
-  width: 0%;
-  /* animation */
-  transition: ease;
-  animation: start 0.8s ease-out forwards;
-  -webkit-animation: start 0.8s ease-out forwards;
-  -moz-animation: start 0.8s ease-out forwards;
-}
-
-.icon1 {
-  border-radius: 50%;
-  box-shadow:
-    0 0 8rem #8EA7E9,
-    inset 0 0 8rem #BFACE2aa;
-  animation-delay: 0.1s;
-  -webkit-animation-delay: 0.1s;
-}
-
-.icon2 {
-  border-radius: 20%;
-  box-shadow:
-   0 0 8rem #FF8E9Eaa;
-    /* inset 0 0 8rem #F9B5D0aa; */
-  animation-delay: 0.2s;
-  -webkit-animation-delay: 0.2s;
-}
-
-.icon3 {
-  border-radius: 10%;
-  box-shadow:
-
-     inset 0 0 8rem #82CD4788,
-    0 0 8rem #82CD4788;
-  animation-delay: 0.3s;
-  -webkit-animation-delay: 0.3s;
-}
-
-.icon4 {
-  border-radius: 50%;
-  box-shadow:
-    /* inset  */
-    0 0 8rem #BFACE2aa;
-  animation-delay: 0.4s;
-  -webkit-animation-delay: 0.4s;
-}
-
-@-webkit-keyframes start {
-  0% {
-    border-radius: 0%;
-    padding: 2rem;
-    /* border-color: #686EE2aa; */
-    width: 1%;
-    /* phóng to từ dưới lên */
-    margin-top: 90%;
-    margin-right: 90%;
-    rotate: -60deg;
-  }
-
-  33% {
-    width: 120%;
-    margin: 0;
-    rotate: -10deg;
-  }
-
-  66% {
-    width: 120%;
-    margin: 0;
-    rotate: 10deg;
-  }
-
-  100% {
-    border-style:none;
-    padding:0px;
-    width: 100%;
-    margin: 0;
-    rotate: 0deg;
-    /* box-shadow: 0 0 0 #fff; */
-  }
 }
 
 .grid-container {
@@ -186,12 +74,37 @@ h2 {
   grid-template-rows: auto auto;
   gap: calc(10vw + 20px) 5vw;
 }
+.grid-container .grid-item {
+  margin: auto;
+  width: calc(20vw + 8rem);
+  animation: zoom 32s ease-in-out infinite;
+}
+.grid-container .icon {
+  width: 0%;
+}
 
-.decor {
-  margin: 0 auto auto;
-  width: 10vh;
-  height: 4vh;
-  
+.icon1 {
+  -webkit-animation: icon-start 1s ease-in-out forwards;
+  animation: icon-start 1s ease-in-out forwards;
+  animation-delay: 0.2s;
+}
+
+.icon2 {
+  -webkit-animation: icon-start 1s ease-in-out forwards;
+  animation: icon-start 1s ease-in-out forwards;
+  animation-delay: 0.4s;
+}
+
+.icon3 {
+  -webkit-animation: icon-start 1s ease-in-out forwards;
+  animation: icon-start 1s ease-in-out forwards;
+  animation-delay: 0.6s;
+}
+
+.icon4 {
+  -webkit-animation: icon-start 1s ease-in-out forwards;
+  animation: icon-start 1s ease-in-out forwards;
+  animation-delay: 0.8s;
 }
 
 footer {
@@ -200,81 +113,46 @@ footer {
   width: 100vw;
   bottom: calc(1vw + 0.5rem);
 }
-
-footer>* {
-  font-size: 2.5rem;
+footer * {
   font-family: RobotoVi;
+  font-size: 2.5rem;
 }
 
-/* RESPONSIVE FOR PC SCREEN */
 @media only screen and (min-device-width: 720px) {
-
   /* pc small width */
   h1 {
     font-size: calc(3vw + 2rem);
     margin-top: calc(1vw + 2.5rem);
     margin-bottom: calc(1vw + 1.5rem);
   }
-
   h2 {
     font-size: 2rem;
   }
-
   .mailtext {
     display: inline;
     top: 1rem;
   }
-
-  footer>* {
+  footer * {
     font-size: 1rem;
   }
-
   .grid-item {
     margin: auto;
     width: calc(20vw + 1rem);
     animation: none;
     /* background-image: radial-gradient(#AEE2FF, #B9F3FC, rgba(255, 255, 255, 0) 60%); */
   }
-
   /* pc large width */
-  @media only screen and (min-width: 720px) {
-    .grid-container {
-      display: grid;
-      margin: calc(5vw + 2rem) 0 10vw;
-      grid-template-columns: auto auto auto auto;
-      grid-template-rows: auto;
-      gap: calc(10vw + 20px) 5vw;
-    }
-
-    .grid-item {
-      margin: auto;
-      width: calc(10vw + 2rem);
-    }
-  }
-
 }
-
-/* KEYFRAME */
-@-webkit-keyframes glow {
-  from {
-    text-shadow:
-
-      0 0 20px #FFD49566,
-      0 0 30px #FAAB7866,
-      0 0 40px #DC353566;
+@media only screen and (min-device-width: 720px) and (min-width: 720px) {
+  .grid-container {
+    margin: calc(5vw + 2rem) 0 10vw;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    gap: calc(10vw + 20px) 5vw;
   }
-
-  to {
-    text-shadow:
-
-      0 0 20px #37923766,
-      0 0 30px #82CD4766,
-      0 0 40px #54B43566;
+  .grid-container .grid-item {
+    width: calc(10vw + 2rem);
   }
 }
 
-/* FONT  */
-@font-face {
-  font-family: RobotoVi;
-  src: url(RobotoCondensed-Bold.ttf);
-}
+/*# sourceMappingURL=styles.css.map */

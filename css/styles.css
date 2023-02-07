@@ -33,16 +33,18 @@
 }
 @-webkit-keyframes item-zoom {
   3.125% {
-    width: calc(20vw + 12rem);
+    width: calc(10vw + 6rem + 4rem);
   }
   6.25% {
-    width: calc(20vw + 8rem);
+    width: calc(10vw + 6rem);
   }
   100% {
-    width: calc(20vw + 8rem);
+    width: calc(10vw + 6rem);
   }
 }
 body {
+  margin: 0;
+  padding: 0;
   height: 100vh;
   text-align: center;
   overflow: hidden;
@@ -50,9 +52,8 @@ body {
 }
 
 h1 {
-  margin-top: calc(1vw + 2.5rem);
-  margin-bottom: calc(2vw + 4rem);
-  font-size: calc(3vw + 5rem);
+  margin-top: calc(1vw + 1rem);
+  margin-bottom: 1rem;
   font-family: RobotoVi;
   /* effect */
   color: #645cbb;
@@ -67,12 +68,12 @@ h1 {
   }
   to {
     padding-top: 0;
-    font-size: calc(3vw + 5rem);
+    font-size: calc(6vw + 1rem);
   }
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 1.5rem;
   color: #50577a;
   margin: 0;
   font-family: RobotoVi;
@@ -84,14 +85,14 @@ h2 {
 
 .grid-container {
   display: grid;
-  margin: calc(2.5vw + 8rem) 0 10vw;
+  margin: calc(2.5vw + 2rem) 0 10vw;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
-  gap: calc(10vw + 20px) 5vw;
+  grid-gap: 2.5rem 0rem;
 }
 .grid-container .grid-item {
   margin: auto;
-  width: calc(20vw + 8rem);
+  width: calc(10vw + 6rem);
   animation: zoom 32s ease-in-out infinite;
 }
 .grid-container .icon {
@@ -117,6 +118,7 @@ h2 {
 }
 
 #item1 {
+  width: calc(10vw + 6rem), 4rem;
   animation: item-zoom 32s ease 8s infinite;
   -webkit-animation: item-zoom 32s ease 8s infinite;
 }
@@ -140,6 +142,7 @@ h2 {
 }
 
 #item2 {
+  width: calc(10vw + 6rem), 4rem;
   animation: item-zoom 32s ease 16s infinite;
   -webkit-animation: item-zoom 32s ease 16s infinite;
 }
@@ -163,6 +166,7 @@ h2 {
 }
 
 #item3 {
+  width: calc(10vw + 6rem), 4rem;
   animation: item-zoom 32s ease 24s infinite;
   -webkit-animation: item-zoom 32s ease 24s infinite;
 }
@@ -186,6 +190,7 @@ h2 {
 }
 
 #item4 {
+  width: calc(10vw + 6rem), 4rem;
   animation: item-zoom 32s ease 32s infinite;
   -webkit-animation: item-zoom 32s ease 32s infinite;
 }
@@ -194,48 +199,53 @@ footer {
   text-align: center;
   position: fixed;
   width: 100vw;
-  bottom: calc(1vw + 0.5rem);
+  bottom: 0;
 }
 footer * {
   font-family: RobotoVi;
-  font-size: 2.5rem;
+  font-size: 1rem;
 }
 
-@media only screen and (min-device-width: 720px) {
+@media (min-width: 720px) {
   /* pc small width */
+  body {
+    overflow: auto;
+  }
   h1 {
-    font-size: calc(3vw + 2rem);
-    margin-top: calc(1vw + 2.5rem);
-    margin-bottom: calc(1vw + 1.5rem);
+    margin-top: 1rem;
+    margin-bottom: 0;
   }
   h2 {
     font-size: 2rem;
+    margin-bottom: 1rem;
   }
   .mailtext {
     display: inline;
     top: 1rem;
   }
-  footer * {
-    font-size: 1rem;
-  }
-  .grid-item {
-    margin: auto;
-    width: calc(20vw + 1rem);
-    animation: none;
-    /* background-image: radial-gradient(#AEE2FF, #B9F3FC, rgba(255, 255, 255, 0) 60%); */
-  }
-  /* pc large width */
-}
-@media only screen and (min-device-width: 720px) and (min-width: 720px) {
   .grid-container {
-    margin: calc(5vw + 2rem) 0 10vw;
+    margin: calc(5vw + 1rem) 0 10vw;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto;
     gap: calc(10vw + 20px) 5vw;
   }
-  .grid-container .grid-item {
-    width: calc(10vw + 2rem);
+  .grid-container #item1 {
+    width: calc(12vw + 2rem);
   }
+  .grid-container #item2 {
+    width: calc(12vw + 2rem);
+  }
+  .grid-container #item3 {
+    width: calc(12vw + 2rem);
+  }
+  .grid-container #item4 {
+    width: calc(12vw + 2rem);
+  }
+  @-webkit-keyframes item-zoom {}
+  footer * {
+    font-size: 1rem;
+  }
+  /* pc large width */
 }
 
 /*# sourceMappingURL=styles.css.map */
